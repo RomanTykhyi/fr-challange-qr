@@ -1,3 +1,42 @@
 body {
-    background-color: aqua;
+    background-color: lightblue;
+}
+
+img {
+    border-radius: 25px;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+    max-width: 576px;
+}
+
+.qr-title {
+    font-weight: 700;
+    font-size: 46px;
+    text-align: center;
+}
+
+.qr-caption {
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 2px #191919;
+    color: lightslategray;
 }
