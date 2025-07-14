@@ -1,9 +1,12 @@
 body {
     background-color: lightblue;
+    margin: 0; /* Remove default margin */
 }
 
 img {
-    border-radius: 25px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 p {
@@ -16,27 +19,61 @@ p {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container-content {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 20px;
     background-color: white;
-    max-width: 576px;
+    max-width: 375px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .qr-title {
     font-weight: 700;
-    font-size: 46px;
+    font-size: 2.6rem;
     text-align: center;
 }
 
 .qr-caption {
-    font-size: 32px;
+    font-size: 1.8rem;
     text-align: center;
     text-shadow: 2px #191919;
     color: lightslategray;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 375px) {
+    
+    .container-content {
+        max-width: 576px / 2; /* Adjust width for tablets */
+    }
+
+    .qr-title {
+        font-size: 1.4rem; /* Adjust font size for tablets */
+    }
+
+    .qr-caption {
+        font-size: 1rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (min-width: 1440px) {
+    .container-content {
+        max-width: 576px; /* Adjust width for desktop */
+    }
+
+    .qr-title {
+        font-size: 2.6rem; /* Restore font size for desktop */
+    }
+
+    .qr-caption {
+        font-size: 1.8rem; /* Restore font size for desktop */
+    }
 }
