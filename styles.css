@@ -11,7 +11,7 @@ img {
 
 p {
     font-family: "Outfit", sans-serif;
-    margin: 15px;
+    margin: 0;
 }
 
 .container {
@@ -19,7 +19,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 20px;
+    
     box-sizing: border-box;
 }
 
@@ -28,52 +28,33 @@ p {
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    padding: 20px;
+    padding: 16px 16px 24px 16px;
     background-color: white;
-    max-width: 375px;
+    max-width: 320px;
     width: 100%;
     box-sizing: border-box;
 }
 
+.container-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    max-width: 288px;
+    
+}
+
 .qr-title {
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 
 .qr-caption {
-    font-size: 1.8rem;
+    font-size: 1rem;
     text-align: center;
     text-shadow: 2px #191919;
     color: lightslategray;
-}
-
-/* Media Queries for Responsiveness */
-@media (min-width: 375px) {
-    
-    .container-content {
-        max-width: 576px / 2; /* Adjust width for tablets */
-    }
-
-    .qr-title {
-        font-size: 1.4rem; /* Adjust font size for tablets */
-    }
-
-    .qr-caption {
-        font-size: 1rem; /* Adjust font size for tablets */
-    }
-}
-
-@media (min-width: 1440px) {
-    .container-content {
-        max-width: 576px; /* Adjust width for desktop */
-    }
-
-    .qr-title {
-        font-size: 2.6rem; /* Restore font size for desktop */
-    }
-
-    .qr-caption {
-        font-size: 1.8rem; /* Restore font size for desktop */
-    }
 }
