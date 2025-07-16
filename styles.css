@@ -29,7 +29,7 @@ p {
     border-radius: 20px;
     padding: 1rem 1rem 1.5rem 1rem;
     background-color: white;
-    max-width: 320px;
+    max-width: 20rem;
     width: 100%;
     box-sizing: border-box;
 }
@@ -56,4 +56,13 @@ p {
     text-align: center;
     text-shadow: 0.5px 0.5px;
     color: lightslategray;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
