@@ -19,7 +19,6 @@ p {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
     box-sizing: border-box;
 }
 
@@ -28,7 +27,7 @@ p {
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    padding: 16px 16px 24px 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
     background-color: white;
     max-width: 320px;
     width: 100%;
@@ -40,8 +39,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
-    padding: 16px;
+    gap: 1rem;
+    padding: 1rem;
     max-width: 288px;
     
 }
@@ -55,6 +54,6 @@ p {
 .qr-caption {
     font-size: 1rem;
     text-align: center;
-    text-shadow: 2px #191919;
+    text-shadow: 0.5px 0.5px;
     color: lightslategray;
 }
